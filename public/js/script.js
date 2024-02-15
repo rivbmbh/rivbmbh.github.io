@@ -23,8 +23,12 @@ window.onscroll = function() {
     var timeout = setTimeout(function() {
         header.classList.remove('nav-fixed');
         header.classList.add('nav-fixed2');
-    }, 1200); // Mengubah 200 menjadi 400 untuk menambahkan delay 400ms
+    }, 500); // Mengubah 200 menjadi 400 untuk menambahkan delay 400ms
+    
+    // Menambahkan transisi ease-in-out
+    header.style.transition = "bottom 0.4s ease-in-out"; // Kamu bisa menyesuaikan nilai 0.3s sesuai kebutuhan
 }
+
 
 
 // window.onscroll = function(){
