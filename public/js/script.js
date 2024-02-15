@@ -8,13 +8,61 @@ hamburger.addEventListener('click', function() {
 });
 
 //header scroll
-window.onscroll = function(){
+window.onscroll = function() {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
-    if(window.pageYOffset > fixedNav){
+    if (window.pageYOffset > fixedNav) {
         header.classList.add('nav-fixed');
-    }else{
+    } else {
         header.classList.remove('nav-fixed');
     }
+    
+    // Menambah event listener untuk mendeteksi berhenti scroll
+    clearTimeout(timeout);
+    var timeout = setTimeout(function() {
+        header.classList.remove('nav-fixed');
+        header.classList.add('nav-fixed2');
+    }, 1200); // Mengubah 200 menjadi 400 untuk menambahkan delay 400ms
 }
+
+
+// window.onscroll = function(){
+//     const header = document.querySelector('header');
+//     const fixedNav = header.offsetTop;
+
+//     if(window.pageYOffset > fixedNav){
+//         header.classList.add('nav-fixed');
+//     }else{
+//         header.classList.remove('nav-fixed');
+//     }
+// }
+
+// JavaScript untuk menampilkan dan menyembunyikan dropdown saat hover
+    const parentDropdown = document.querySelector('.li-down');
+    const itemDropdown = document.querySelector('#dropdown');
+    const faRight = document.getElementById('i-right');
+    const faDown = document.getElementById('i-down');
+
+    
+
+    parentDropdown.addEventListener('mouseover', function() {
+        itemDropdown.classList.remove('hidden');
+        // for caret-right
+        faRight.classList.remove('inline');
+        faRight.classList.add('hidden');
+        // for caret-down
+        faDown.classList.remove('hidden');
+        faDown.classList.add('inline');
+    });
+    
+    parentDropdown.addEventListener('mouseleave', function() {
+        itemDropdown.classList.add('hidden');
+          // for caret-right
+        faRight.classList.remove('hidden');
+        faRight.classList.add('inline');
+        // for caret-down
+        faDown.classList.remove('inline');
+        faDown.classList.add('hidden');
+    });
+    

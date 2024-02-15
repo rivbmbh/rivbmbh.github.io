@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My-Portofolio</title>   
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-    <script src="fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <script src="assets/fontawesome/js/all.min.js"></script>
   </head>
   <body class="dark:bg-gradient-to-l from-slate-700 via-slate-800 to-slate-900 h-[3000px]">
     <!-- Header Section -->
@@ -67,23 +67,19 @@
                 <li class="group">
                   <a
                     class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#skills"
-                    >Skills</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#blog"
-                    >Address</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
                     href="#contact"
                     >Contact</a
                   >
+                </li>
+                <li class="li-down relative group">
+                  <div class="text-base text-darkText py-2 mx-8 group-hover:text-hover">Dropdown
+                    <img id="i-right" src="assets/img/right.png" class="inline w-[10px] h-[10px] ml-1" alt="caret-right">
+                    <img id="i-down" src="assets/img/bottom.png" class="hidden w-[10px] h-[10px] ml-1" alt="caret-down">
+                  </div>
+                  <div id="dropdown" class="hidden nav-dropdown">
+                      <a href="#skills" class="block text-base text-darkText pt-2 mx-8 hover:text-hover">Skills</a>
+                      <a href="#blog" class="block text-base text-darkText py-2 mx-8 hover:text-hover">Address</a>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -182,7 +178,7 @@
           <div class="w-full self-end px-4 mt-7 lg:mt-0 lg:w-1/2">
             <div class="mt-10 relative lg:mt-9 lg:right-0">
               <img
-                src="img/toji.png"
+                src="assets/img/toji.png"
                 alt="self"
                 class="max-w-full mx-auto"
               />
@@ -277,7 +273,7 @@
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
-                src="img/web (1).jpg"
+                src="assets/img/web (1).jpg"
                 alt="gambar-portofolio"
                 width="w-full"
               />
@@ -294,7 +290,7 @@
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
-                src="img/web (5).jpg"
+                src="assets/img/web (5).jpg"
                 alt="gambar-portofolio"
                 width="w-full"
               />
@@ -311,7 +307,7 @@
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
-                src="img/web (3).jpg"
+                src="assets/img/web (3).jpg"
                 alt="gambar-portofolio"
                 width="w-full"
               />
@@ -328,7 +324,7 @@
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
-                src="img/web (4).jpg"
+                src="assets/img/web (4).jpg"
                 alt="gambar-portofolio"
                 width="w-full"
               />
@@ -372,7 +368,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[100%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight">
-                      <img src="img/html.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/html.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">100%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
@@ -381,7 +377,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[80%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/css.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/css.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">80%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
@@ -390,7 +386,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[35%] p-2 absolute flex justify-between items-center lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/js.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/js.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">35%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
@@ -399,7 +395,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[70%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/php.png" alt="js" class="w-7 h-5 rounded-sm"/>
+                      <img src="assets/img/php.png" alt="js" class="w-7 h-5 rounded-sm"/>
                       <span class="text-darkText">70%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
@@ -408,7 +404,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[60%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/ci.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/ci.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">60%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">./div>
@@ -417,7 +413,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[50%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/bootstrap.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/bootstrap.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">50%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
@@ -426,7 +422,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
                     <div class="bg-white w-[85%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/tailwind.png" alt="js" class="w-5 h-4 rounded-sm"/>
+                      <img src="assets/img/tailwind.png" alt="js" class="w-5 h-4 rounded-sm"/>
                       <span class="text-darkText">85%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
@@ -444,7 +440,7 @@
                   <div class="max-w-full relative">
                     <div
                       class="bg-white w-[70%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/pixelab.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/pixelab.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">70%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
@@ -453,7 +449,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
                     <div class="bg-white w-[70%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/xd.png" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/xd.png" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">70%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
@@ -462,7 +458,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
                     <div class="bg-white w-[85%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/canva.png" alt="js" class="w-5 h-5 rounded-lg"/>
+                      <img src="assets/img/canva.png" alt="js" class="w-5 h-5 rounded-lg"/>
                       <span class="text-darkText">85%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
@@ -471,7 +467,7 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
                     <div class="bg-white w-[60%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/capcut1.jpg" alt="js" class="w-4 h-4 ml-1 rounded-sm"/>
+                      <img src="assets/img/capcut1.jpg" alt="js" class="w-4 h-4 ml-1 rounded-sm"/>
                       <span class="text-darkText">60%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
@@ -481,7 +477,7 @@
                   <div class="max-w-full relative">
                     <div
                       class="bg-white w-[55%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="img/kinemaster2.jpg" alt="js" class="w-5 h-5 rounded-sm"/>
+                      <img src="assets/img/kinemaster2.jpg" alt="js" class="w-5 h-5 rounded-sm"/>
                       <span class="text-darkText">55%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
