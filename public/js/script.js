@@ -8,39 +8,16 @@ hamburger.addEventListener('click', function() {
 });
 
 //header scroll
-window.onscroll = function() {
+window.onscroll = function(){
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
-    if (window.pageYOffset > fixedNav) {
+    if(window.pageYOffset > fixedNav){
         header.classList.add('nav-fixed');
-    } else {
+    }else{
         header.classList.remove('nav-fixed');
-        header.classList.remove('nav-fixed2');
     }
-    
-    // Menambah event listener untuk mendeteksi berhenti scroll
-    clearTimeout(timeout);
-    var timeout = setTimeout(function() {
-        header.classList.remove('nav-fixed');
-        header.classList.add('nav-fixed2');
-    }, 500); // Mengubah 200 menjadi 500 untuk menambahkan delay 500ms
-    
-    // Menambahkan transisi ease-in-out
-    header.style.transition = "bottom 0.4s ease-in-out"; // Kamu bisa menyesuaikan nilai 0.3s sesuai kebutuhan
 }
-
-
-// window.onscroll = function(){
-//     const header = document.querySelector('header');
-//     const fixedNav = header.offsetTop;
-
-//     if(window.pageYOffset > fixedNav){
-//         header.classList.add('nav-fixed');
-//     }else{
-//         header.classList.remove('nav-fixed');
-//     }
-// }
 
 // JavaScript untuk menampilkan dan menyembunyikan dropdown saat hover
     const parentDropdown = document.querySelector('.li-down');
