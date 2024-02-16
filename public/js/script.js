@@ -10,12 +10,17 @@ hamburger.addEventListener('click', function() {
 //header scroll
 window.onscroll = function(){
     const header = document.querySelector('header');
+    const up = document.querySelector('#up');
     const fixedNav = header.offsetTop;
 
     if(window.pageYOffset > fixedNav){
         header.classList.add('nav-fixed');
+        up.classList.remove('hidden');
+
     }else{
         header.classList.remove('nav-fixed');
+        up.classList.add('hidden');
+
     }
 }
 
