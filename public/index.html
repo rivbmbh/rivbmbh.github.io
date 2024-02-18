@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <script src="assets/fontawesome/js/all.min.js"></script>
   </head>
-  <body class="dark:bg-gradient-to-l from-slate-700 via-slate-800 to-slate-900 h-[3000px]">
+  <body class="dark:bg-gradient-to-bl from-slate-800 via-slate-900 to-slate-950">
     <!-- Header Section -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex">
       <div class="container">
@@ -40,60 +40,49 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              class="hidden absolute py-5 bg-white dark:bg-darkText dark:lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
             >
-              <ul class="block space-y-2 lg:flex lg:space-y-0">
+              <ul class="block space-y-2 lg:flex lg:items-center lg:space-y-0">
                 <li class="group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#hero"
-                    >Home</a
-                  >
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#hero">Home</a>
                 </li>
                 <li class="group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#about"
-                    >About</a
-                  >
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#about">About</a >
                 </li>
                 <li class="group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#portofolio"
-                    >Portofilio</a
-                  >
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#portofolio">Portofilio</a>
                 </li>
                 <li class="group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#contact"
-                    >Contact</a
-                  >
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#contact">Contact</a>
                 </li>
                 <li class="lg:hidden group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#skills"
-                    >Skills</a
-          S       >
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#skills">Skills</a>
                 </li>
                 <li class="lg:hidden group">
-                  <a
-                    class="text-base text-darkText py-2 mx-8 group-hover:text-hover"
-                    href="#address"
-                    >Address</a
-                  >
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#address">Address</a>
                 </li>
                 <li class="li-down hidden lg:block relative group">
-                  <a href="#" class="text-base text-darkText py-2 mx-8 group-hover:text-hover">Dropdown
-                    <img id="i-right" src="assets/img/right.png" class="inline w-[10px] h-[10px] ml-1" alt="caret-right">
-                    <img id="i-down" src="assets/img/bottom.png" class="hidden w-[10px] h-[10px] ml-1" alt="caret-down">
+                  <a href="#" class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover">Dropdown
+                    <!-- BLACK -->
+                    <img id="i-right" fill="#ffff" src="assets/img/right.png" class="inline dark:hidden w-[10px] h-[10px] ml-0.5" alt="caret-right">
+                    <img id="i-down" src="assets/img/bottom.png" class="hidden dark:hidden w-[10px] h-[10px] ml-0.5 dark:text-white" alt="caret-down">
+                    <!-- WHITE -->
+                    <img id="i-right2" fill="#ffff" src="assets/img/right2.png" class="hidden dark:inline w-[10px] h-[10px] ml-0.5" alt="caret-right">
+                    <img id="i-down2" src="assets/img/bottom2.png" class="hidden w-[10px] h-[10px] ml-0.5 dark:text-white" alt="caret-down">
                   </a>
-                  <div id="dropdown" class="hidden nav-dropdown">
-                      <a href="#skills" class="block text-base text-darkText pt-2 mx-8 hover:text-hover">Skills</a>
-                      <a href="#address" class="block text-base text-darkText py-2 mx-8 hover:text-hover">Address</a>
+                  <div id="dropdown" class="hidden w-max absolute z-[9999] pt-2">
+                      <a href="#skills" class="block text-base text-darkText dark:text-white pt-2 mx-8 hover:text-hover dark:hover:text-hover">Skills</a>
+                      <a href="#address" class="block text-base text-darkText dark:text-white py-2 mx-8 hover:text-hover dark:hover:text-hover">Address</a>
                   </div>
+                </li>
+                <!-- toggle dark -->
+                <li class="py-2 mx-8">
+                  <button id="darkMode" class="flex justify-between items-center max-w-max py-0 px-0.5 bg-slate-200 dark:bg-slate-400/55 rounded-full">
+                      <span class="hidden text-sm px-1 text-white font-semibold dark:block">ON</span>
+                      <img src="assets/img/lampoff.png" alt="lightmodeIcon" class="w-6 h-6 bg-white rounded-full dark:hidden ">
+                      <img src="assets/img/lampon.png" alt="darkmodeIcon"  class="hidden w-6 h-6 rounded-full dark:bg-white dark:inline-block">
+                      <span class="text-sm px-1 text-darkText font-semibold dark:hidden">OFF</span>
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -111,7 +100,7 @@
             <h1 class="text-base font-semibold text-primary lg:text-xl">
                     Hi Everyone👋,
                 <span
-                class="block font-bold text-darkText text-2xl md:text-3xl lg:text-4xl"
+                class="block font-bold text-darkText dark:text-white text-2xl md:text-3xl lg:text-4xl"
                 >i'm, Rivaldo Del Pierro</span>
             </h1>
 
@@ -119,7 +108,7 @@
               class="font-medium text-slate-500 mb-5 text-md md:text-lg lg:text-2xl"
             >
               Multimedia Designer &
-              <span class="text-darkText">Web Developer</span>
+              <span class="text-darkText dark:text-white">Web Developer</span>
             </h2>
 
             <p class="font-medium text-slate-400 mb-10 leading-relaxed">
@@ -224,19 +213,19 @@
             <h4 class="uppercase font-semibold text-primary text-lg mb-1">
               About Me
             </h4>
-            <h2 class="text-darkText mb-3 text-4xl font-bold">
+            <h2 class="text-darkText dark:text-white mb-3 text-4xl font-bold">
                 Personality and hobbies
             </h2>
-            <p class="text-darkText text-base text-justify mb-4">
+            <p class="text-darkText dark:text-white text-base text-justify mb-4">
                 I someone who doesn't consider themselves exceptional but always strives to improve and develop their skills, aspiring to become a person with clear goals in life.
             </p>
-            <p class="text-darkText text-base text-justify">
+            <p class="text-darkText dark:text-white text-base text-justify">
                 I also enjoy playing games, but it's mostly to pass the time, not much more. Additionally, you like to go for rides on your motorcycle.
             </p>
           </div>
 
-          <div class="w-full px-4">
-            <h3 class="text-darkText text-2xl mb-3 font-bold">Follow Me</h3>
+          <div class="w-full px-4 text-darkText dark:text-white">
+            <h3 class=" text-2xl mb-3 font-bold">Follow Me</h3>
             <p>
                 "I'm not exactly the coolest person to follow, but I'm active on almost all social media platforms. So, to add a bit of variety to my website, I've included my social media links below. Feel free to check them out if you're interested. Click away! It's not a link to hack you, hahaha."
             </p>
@@ -599,13 +588,13 @@
             <h2 class="font-bold text-white text-xl mb-4 uppercase pb-1 border-b border-white">Categories Experience</h2>
             <ul class="block space-y-2">
               <li>
-                <a class=" hover:text-hover" href="#hero">-Web Design</a>
+                <span>Web Design&nbsp;<i class="fa-solid fa-square-check"></i></span>
               </li>
               <li>
-                <a class=" hover:text-hover" href="#about">-Graphic Design</a>
+                <span>Graphic Design&nbsp;<i class="fa-solid fa-square-check"></i></span>
               </li>
               <li>
-                <a class=" hover:text-hover" href="#portofolio">-Editor Video</a>
+                <span>Video Editor&nbsp;<i class="fa-solid fa-square-check"></i></span>
               </li>
             </ul>
           </div>
