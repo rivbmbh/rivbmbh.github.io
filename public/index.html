@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <script src="assets/fontawesome/js/all.min.js"></script>
   </head>
-  <body class="dark:bg-gradient-to-bl from-slate-800 via-slate-900 to-slate-950">
+  <body class="dark:bg-slate-800">
     <!-- Header Section -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex">
       <div class="container">
@@ -40,9 +40,9 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white dark:bg-darkText dark:lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              class="hidden absolute z-30 py-5 bg-white dark:bg-darkText dark:lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
             >
-              <ul class="block space-y-2 lg:flex lg:items-center lg:space-y-0">
+              <ul class="block space-y-4 lg:flex lg:items-center lg:space-y-0">
                 <li class="group">
                   <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#hero">Home</a>
                 </li>
@@ -52,9 +52,7 @@
                 <li class="group">
                   <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#portofolio">Portofilio</a>
                 </li>
-                <li class="group">
-                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#contact">Contact</a>
-                </li>
+               
                 <li class="lg:hidden group">
                   <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#skills">Skills</a>
                 </li>
@@ -74,6 +72,9 @@
                       <a href="#skills" class="block text-base text-darkText dark:text-white pt-2 mx-8 hover:text-hover dark:hover:text-hover">Skills</a>
                       <a href="#address" class="block text-base text-darkText dark:text-white py-2 mx-8 hover:text-hover dark:hover:text-hover">Address</a>
                   </div>
+                </li>
+                <li class="group">
+                  <a class="text-base text-darkText dark:text-white py-2 mx-8 group-hover:text-hover" href="#contact">Contact</a>
                 </li>
                 <!-- toggle dark -->
                 <li class="py-2 mx-8">
@@ -105,77 +106,24 @@
             </h1>
 
             <h2
-              class="font-medium text-slate-500 mb-5 text-md md:text-lg lg:text-2xl"
+              class="font-medium text-slate-500 dark:text-slate-200 mb-5 text-md md:text-lg lg:text-2xl"
             >
               Multimedia Designer &
               <span class="text-darkText dark:text-white">Web Developer</span>
             </h2>
 
-            <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+            <p class="font-medium text-slate-400 dark:text-slate-200 mb-10 leading-relaxed">
               Learning coding and designing is my hobby
               <!-- <span class="text-darkText font-bold">(Toyota Hillux)</span>.😆 -->
             </p>
 
             <a
-              href="#"
+              href="#contact"
               class="tezt-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-hover transition duration-300 ease-in-out"
               >Contact Me</a
             >
 
-            <!-- html -->
-            <svg
-              class="absolute animate-wiggle -z-20 opacity-20 w-8 h-8 -bottom-14 left-5 sm:w-10 sm:h-10 sm:left-60 sm:bottom-1 md:left-52 lg:w-12 lg:h-12 lg:right-11"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512"
-            >
-              <path
-                d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"
-              />
-            </svg>
-
-            <!-- js -->
-            <svg
-              class="absolute animate-wiggle -z-20 opacity-20 w-8 h-8 sm:w-10 sm:h-10 top-[30%] -right-1 sm:right-20 sm:top-[22%] lg:w-12 lg:h-12 lg:-top-9 lg:right-40 xl:-top-7"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
-              />
-            </svg>
-
-            <!-- css -->
-            <svg
-              class="absolute animate-wiggle -z-20 opacity-20 w-8 h-8 -top-2 right-11 sm:w-10 sm:h-10 sm:-top-16 sm:left-[35%] lg:w-12 lg:h-12"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512"
-            >
-              <path
-                d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
-              />
-            </svg>
-
-            <!-- PHP -->
-            <svg
-              class="absolute animate-wiggle -z-20 opacity-20 w-10 h-10 -right-2 bottom-7 sm:w-14 sm:h-14 sm:-bottom-5 sm:right-32 lg:w-16 lg:h-16 xl:bottom-4 xl:right-36"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 512"
-            >
-              <path
-                d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"
-              />
-            </svg>
-
-            <!-- Laravel -->
-            <svg
-              class="absolute animate-wiggle -z-20 opacity-20 w-8 h-8 -top-14 -left-1 sm:w-11 sm:h-11 sm:-top-20 sm:-left-2 lg:left-2 lg:w-12 lg:h-12"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <path
-                d="M504.4 115.8a5.7 5.7 0 0 0 -.3-.7 8.5 8.5 0 0 0 -.5-1.3 6 6 0 0 0 -.5-.7 9.4 9.4 0 0 0 -.7-.9c-.2-.2-.5-.4-.8-.6a8.8 8.8 0 0 0 -.9-.7L404.4 55.6a8 8 0 0 0 -8 0L300.1 111h0a8.1 8.1 0 0 0 -.9 .7 7.7 7.7 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .2-.4 .5-.5 .7a9.7 9.7 0 0 0 -.5 1.3c-.1 .2-.2 .4-.3 .7a8.1 8.1 0 0 0 -.3 2.1V223.2l-80.2 46.2V63.4a7.8 7.8 0 0 0 -.3-2.1c-.1-.2-.2-.5-.3-.7a8.4 8.4 0 0 0 -.5-1.2c-.1-.3-.4-.5-.5-.7a9.4 9.4 0 0 0 -.7-.9 9.5 9.5 0 0 0 -.8-.6 9.8 9.8 0 0 0 -.9-.7h0L115.6 1.1a8 8 0 0 0 -8 0L11.3 56.5h0a6.5 6.5 0 0 0 -.9 .7 7.8 7.8 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .3-.4 .5-.6 .7a7.9 7.9 0 0 0 -.5 1.2 6.5 6.5 0 0 0 -.3 .7 8.2 8.2 0 0 0 -.3 2.1v329.7a8 8 0 0 0 4 7l192.5 110.8a8.8 8.8 0 0 0 1.3 .5c.2 .1 .4 .2 .6 .3a7.9 7.9 0 0 0 4.1 0c.2-.1 .4-.2 .6-.2a8.6 8.6 0 0 0 1.4-.6L404.4 400.1a8 8 0 0 0 4-7V287.9l92.2-53.1a8 8 0 0 0 4-7V117.9A8.6 8.6 0 0 0 504.4 115.8zM111.6 17.3h0l80.2 46.2-80.2 46.2L31.4 63.4zm88.3 60V278.6l-46.5 26.8-33.7 19.4V123.5l46.5-26.8zm0 412.8L23.4 388.5V77.3L57.1 96.7l46.5 26.8V338.7a6.9 6.9 0 0 0 .1 .9 8 8 0 0 0 .2 1.2h0a5.9 5.9 0 0 0 .4 .9 6.4 6.4 0 0 0 .4 1v0a8.5 8.5 0 0 0 .6 .8 7.6 7.6 0 0 0 .7 .8l0 0c.2 .2 .5 .4 .8 .6a8.9 8.9 0 0 0 .9 .7l0 0 0 0 92.2 52.2zm8-106.2-80.1-45.3 84.1-48.4 92.3-53.1 80.1 46.1-58.8 33.6zm184.5 4.6L215.9 490.1V397.8L346.6 323.2l45.8-26.2zm0-119.1L358.7 250l-46.5-26.8V131.8l33.7 19.4L392.4 178zm8-105.3-80.2-46.2 80.2-46.2 80.2 46.2zm8 105.3V178L455 151.2l33.7-19.4v91.4h0z"
-              />
-            </svg>
+           
           </div>
 
           <div class="w-full self-end px-4 mt-7 lg:mt-0 lg:w-1/2">
@@ -206,7 +154,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section -->
-    <section id="about" class="py-20">
+    <section id="about" class="py-20 dark:bg-slate-800">
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <div class="w-full px-4 mb-10">
@@ -256,12 +204,12 @@
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-xl text-primary mb-2">Portofilio</h4>
-            <h2 class="font-bold text-darkText text-3xl mb-4">
+            <h2 class="font-bold text-darkText dark:text-white text-3xl mb-4">
               Rencect Project
             </h2>
             <p class="font-medium text-md text-slate-400">
@@ -281,13 +229,11 @@
                 width="w-full"
               />
             </div>
-            <h3 class="font-semibold text-xl text-darkText mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-darkText dark:text-white mt-5 mb-3">
               <strong>WebGIS Tour </strong>(Map Location)
             </h3>
             <p class="font-medium text-base text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus mollitia iusto consequatur doloremque assumenda
-              asperiores.
+              This is an interactive map page that provides information about available tourist locations.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -298,13 +244,11 @@
                 width="w-full"
               />
             </div>
-            <h3 class="font-semibold text-xl text-darkText mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-darkText dark:text-white mt-5 mb-3">
               <strong>WebGIS Tour </strong>(Insert Data Point)
             </h3>
             <p class="font-medium text-base text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus mollitia iusto consequatur doloremque assumenda
-              asperiores.
+              This section is for adding data either by using tools or by directly digitizing coordinates from the map to capture its coordinates.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -315,13 +259,11 @@
                 width="w-full"
               />
             </div>
-            <h3 class="font-semibold text-xl text-darkText mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-darkText dark:text-white mt-5 mb-3">
               <strong>WebGIS Tour </strong>(Admin Page CRUD)
             </h3>
             <p class="font-medium text-base text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus mollitia iusto consequatur doloremque assumenda
-              asperiores.
+              This part is an admin page to perform CRUD operations on coordinate data that will be displayed on the map page later.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -332,13 +274,11 @@
                 width="w-full"
               />
             </div>
-            <h3 class="font-semibold text-xl text-darkText mt-5 mb-3">
+            <h3 class="font-semibold text-xl text-darkText dark:text-white mt-5 mb-3">
               <strong>WebGIS Tour </strong>(Insert GeoJSON Data Page)
             </h3>
             <p class="font-medium text-base text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus mollitia iusto consequatur doloremque assumenda
-              asperiores.
+              This is also an add data page, but it retrieves points based on a geojson file that is uploaded into the system and will automatically be displayed on the map.
             </p>
           </div>
         </div>
@@ -347,15 +287,15 @@
     <!-- Portofolio Section End -->
 
     <!-- Skill Section Start -->
-    <section id="skills" class="pt-36 pb-32 bg-gradient-to-r from-slate-700 to-slate-800">
+    <section id="skills" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-full mx-auto text-center mb-16">
             <h4 class="font-semibold text-xl text-primary mb-2">Skills</h4>
             <div class="mb-4 text-center gap-3 md:flex md:justify-center">
-              <h2 class="font-bold text-white text-3xl">Web Devloper Skill</h2>
-              <h2 class="font-bold text-white text-3xl">&</h2>
-              <h2 class="font-bold text-white text-3xl">Multimedia Designer</h2>
+              <h2 class="font-bold text-white dark:text-darkText text-3xl">Web Devloper Skill</h2>
+              <h2 class="font-bold text-white dark:text-darkText text-3xl">&</h2>
+              <h2 class="font-bold text-white dark:text-darkText text-3xl">Multimedia Designer</h2>
             </div>
             <p class="font-medium text-md text-slate-400">
                 These are my skills in web development and other multimedia fields, mostly at a basic level of proficiency
@@ -363,70 +303,70 @@
           </div>
 
           <div class="flex flex-wrap lg:flex-nowrap lg:justify-center max-w-full mx-auto gap-5">
-            <div class="w-full lg:w-1/2 mb-5 text-white">
-              <h4 class="font-semibold text-xl text-center sm:text-start mb-3 lg:text-end">
+            <div class="w-full lg:w-1/2 mb-5 text-white dark:text-darkText">
+              <h4 class="font-semibold dark:font-bold text-xl text-center sm:text-start mb-3 lg:text-end">
                 Progamming Languages & Framework
               </h4>
               <ul class="space-y-6">
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[100%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight">
+                    <div class="bg-white dark:bg-slate-800 w-[100%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight">
                       <img src="assets/img/html.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">100%</span>
+                      <span class="text-darkText dark:text-white">100%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[80%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[80%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/css.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">80%</span>
+                      <span class="text-darkText dark:text-white">80%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[35%] p-2 absolute flex justify-between items-center lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[35%] p-2 absolute flex justify-between items-center lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/js.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">35%</span>
+                      <span class="text-darkText dark:text-white">35%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[70%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[70%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/php.png" alt="js" class="w-7 h-5 rounded-sm"/>
-                      <span class="text-darkText">70%</span>
+                      <span class="text-darkText dark:text-white">70%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[60%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[60%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/ci.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">60%</span>
+                      <span class="text-darkText dark:text-white">60%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">./div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[50%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[50%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/bootstrap.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">50%</span>
+                      <span class="text-darkText dark:text-white">50%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative flex lg:flex-row-reverse">
-                    <div class="bg-white w-[85%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[85%] p-2 absolute flex justify-between lg:flex-row-reverse font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/tailwind.png" alt="js" class="w-5 h-4 rounded-sm"/>
-                      <span class="text-darkText">85%</span>
+                      <span class="text-darkText dark:text-white">85%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full p-2 rounded-md text-sm md:text-md text-transparent">.</div>
                   </div>
@@ -434,44 +374,46 @@
               </ul>
             </div>
 
-            <div class="w-full lg:w-1/2 text-white">
-              <h4 class="font-semibold text-xl text-center sm:text-start mb-3">
+            <div class="w-full lg:w-1/2 text-white dark:text-darkText ">
+              <h4 class="font-semibold dark:font-bold text-xl text-center sm:text-start mb-3">
                 Multimedia Tools
               </h4>
               <ul class="space-y-6">
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
                     <div
-                      class="bg-white w-[70%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                      class="bg-white dark:bg-slate-800 w-[70%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/pixelab.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">70%</span>
+                      <span class="text-darkText dark:text-white">70%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
-                    <div class="bg-white w-[70%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[70%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/xd.png" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">70%</span>
+                      <span class="text-darkText dark:text-white">70%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
-                    <div class="bg-white w-[85%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
+                    <div class="bg-white dark:bg-slate-800 w-[85%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
                       <img src="assets/img/canva.png" alt="js" class="w-5 h-5 rounded-lg"/>
-                      <span class="text-darkText">85%</span>
+                      <span class="text-darkText dark:text-white">85%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
-                    <div class="bg-white w-[60%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="assets/img/capcut1.jpg" alt="js" class="w-4 h-4 ml-1 rounded-sm"/>
-                      <span class="text-darkText">60%</span>
+                    <div class="bg-white dark:bg-slate-800 w-[60%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
+                      <img src="assets/img/capcut1.jpg" alt="js" class="w-4 h-4 rounded-sm dark:hidden"/>
+                      <img src="assets/img/capcut3.jpg" alt="js" class="w-4 h-4 rounded-sm hidden dark:block"/>
+
+                      <span class="text-darkText dark:text-white">60%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
                   </div>
@@ -479,27 +421,27 @@
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
                     <div
-                      class="bg-white w-[55%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <img src="assets/img/kinemaster2.jpg" alt="js" class="w-5 h-5 rounded-sm"/>
-                      <span class="text-darkText">55%</span>
+                      class="bg-white dark:bg-slate-800 w-[55%] p-2 absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
+                      <img src="assets/img/kinemaster2.jpg" alt="js" class="w-5 h-5 rounded-full"/>
+                      <span class="text-darkText dark:text-white">55%</span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">.</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
-                    <div class="absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <span class="text-darkText"></span>
-                      <span class="text-darkText"></span>
+                    <div class="absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
+                      <span class="text-darkText dark:text-white"></span>
+                      <span class="text-darkText dark:text-white"></span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">LOCKED</div>
                   </div>
                 </li>
                 <li class="flex flex-col max-w-full w-full">
                   <div class="max-w-full relative">
-                    <div class="absolute flex justify-between font-semibold text-sm md:text-md text-darkText z-10 rounded-md animate-leftRight transition-all">
-                      <span class="text-darkText"></span>
-                      <span class="text-darkText"></span>
+                    <div class="absolute flex justify-between font-semibold text-sm md:text-md text-darkText dark:text-white z-10 rounded-md animate-leftRight transition-all">
+                      <span class="text-darkText dark:text-white"></span>
+                      <span class="text-darkText dark:text-white"></span>
                     </div>
                     <div class="bg-slate-400/40 w-full text-sm md:text-md p-2 rounded-md">LOCKED</div>
                   </div>
@@ -513,12 +455,12 @@
     <!-- Skill Section End -->
 
     <!-- Map Section Start -->
-    <section id="address" class="pt-36 pb-32 bg-slate-100">
+    <section id="address" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-700">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-full mx-auto text-center mb-16">
                     <h4 class="font-semibold text-xl text-primary mb-2">Where I'm From</h4>
-                    <h2 class="font-bold text-darkText text-3xl mb-4">
+                    <h2 class="font-bold text-darkText dark:text-white text-3xl mb-4">
                     Sangihe Islands, North Sulawesi, Indonesia
                     </h2>
                     <p class="font-medium text-md text-slate-400">
@@ -536,7 +478,7 @@
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-xl text-primary mb-2">Conctact</h4>
-            <h2 class="font-bold text-darkText text-3xl mb-4">
+            <h2 class="font-bold text-darkText dark:text-white text-3xl mb-4">
               Give me suggestions or criticism
             </h2>
             <p class="font-medium text-md text-slate-400">
@@ -549,17 +491,17 @@
           <div class="w-full lg:w-2/3 mx-auto">
             <div class="flex flex-col justify-center w-full px-4 mb-8">
               <label for="name" class="font-bold text-base text-primary">Name</label>
-              <input id="name" type="text" name="name" placeholder="Your Name" class="bg-slate-200 text-darkText p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+              <input id="name" type="text" name="name" placeholder="Name" class="bg-slate-200 text-darkText p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
             </div>
 
             <div class="flex flex-col justify-center w-full px-4 mb-8">
               <label for="Email" class="font-bold text-base text-primary">Email</label>
-              <input id="Email" type="text" name="Email" placeholder="Your Email" class="bg-slate-200 text-darkText p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+              <input id="Email" type="text" name="Email" placeholder="Email" class="bg-slate-200 text-darkText p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
             </div>
 
             <div class="flex flex-col justify-center w-full px-4 mb-8">
               <label for="message" class="font-bold text-base text-primary">Message</label>
-              <textarea name="message" id="message" cols="30" rows="10" class="bg-slate-200 text-darkText/55 p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">Text Me</textarea>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="bg-slate-200 text-darkText/55 p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
             </div>
 
             <div class="px-4 w-full">
