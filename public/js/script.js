@@ -102,3 +102,39 @@ document
     }
 
 //END DARK MODE FUNCTION
+
+
+//CONTACT FORM
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyuIldpEFEXX2F5Gg3VSIT7YTvPfyjcp31_chrES5KxreVYMaIPQx_oi_VQb-K2mF_k/exec'
+const form = document.forms['contact-me'];
+const btnSubmit = document.querySelector('.btn-submit');
+const btnLoading = document.querySelector('.btn-loading');
+const message = document.querySelector('.message');
+const messageError = document.querySelector('.messagError');
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    // if button submit click
+    //show btn-loading hide btn-submit
+    btnLoading.classList.toggle('hidden');
+    btnSubmit.classList.toggle('hidden');
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+        //show 
+        btnLoading.classList.toggle('hidden');
+        btnSubmit.classList.toggle('hidden');
+
+        //show alert success
+        message.classList.toggle('hidden')
+        //clear form
+        form.reset();
+        console.log('Success!', response)
+        })
+        .catch(error => {
+        //show alert success
+        messageError.classList.toggle('hidden')
+        console.error('Error!', error.message)
+    })
+})
