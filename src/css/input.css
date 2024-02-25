@@ -7,7 +7,7 @@
     @apply w-[30px] h-[2px] my-2 block bg-darkText dark:bg-white;
   }
   .icon-list {
-    @apply bg-transparent p-1 flex justify-center items-center rounded-full border border-slate-300 hover:bg-hover transition-colors duration-300 ease-in-out;
+    @apply bg-transparent py-1 px-2 flex justify-center items-center rounded-full border border-slate-300 hover:bg-hover transition-colors duration-300 ease-in-out;
   }
   .icon {
     @apply text-slate-300/70 group-hover:text-white;
