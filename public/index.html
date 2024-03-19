@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <script src="assets/fontawesome/js/all.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="dark:bg-slate-800">
     <!-- Header Section -->
@@ -127,10 +129,11 @@
            
           </div>
 
+          <!-- img-profile -->
           <div class="w-full self-end px-4 mt-7 lg:mt-0 lg:w-1/2">
             <div class="mt-10 relative lg:mt-9 lg:right-0">
-              <img
-                src="assets/img/toji.png"
+              <img fill="#ffff"
+                src="assets/img/anonim.png"
                 alt="self"
                 class="max-w-full mx-auto"
               />
@@ -209,7 +212,7 @@
     <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
+          <div data-aos="fade-down" class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-xl text-primary mb-2">Portofilio</h4>
             <h2 class="font-bold text-darkText dark:text-white text-3xl mb-4">
               Rencect Project
@@ -223,7 +226,7 @@
         <div
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
         >
-          <div class="mb-12 p-4 md:w-1/2">
+          <div data-aos="fade-right" class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="assets/img/web (1).jpg"
@@ -238,7 +241,7 @@
               This is an interactive map page that provides information about available tourist locations.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div data-aos="fade-left" class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="assets/img/web (5).jpg"
@@ -253,7 +256,7 @@
               This section is for adding data either by using tools or by directly digitizing coordinates from the map to capture its coordinates.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div data-aos="fade-right" class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="assets/img/web (3).jpg"
@@ -268,7 +271,7 @@
               This part is an admin page to perform CRUD operations on coordinate data that will be displayed on the map page later.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div data-aos="fade-left" class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="assets/img/web (4).jpg"
@@ -292,7 +295,7 @@
     <section id="skills" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-full mx-auto text-center mb-16">
+          <div data-aos="fade-down" class="max-w-full mx-auto text-center mb-16">
             <h4 class="font-semibold text-xl text-primary mb-2">Skills</h4>
             <div class="mb-4 text-center gap-3 md:flex md:justify-center">
               <h2 class="font-bold text-white dark:text-darkText text-3xl">Web Devloper Skill</h2>
@@ -306,7 +309,7 @@
 
           <div class="flex flex-wrap lg:flex-nowrap lg:justify-center max-w-full mx-auto gap-5">
             <div class="w-full lg:w-1/2 mb-5 text-white dark:text-darkText">
-              <h4 class="font-semibold dark:font-bold text-xl text-center sm:text-start mb-3 lg:text-end">
+              <h4 data-aos="fade-right" class="font-semibold dark:font-bold text-xl text-center sm:text-start mb-3 lg:text-end">
                 Progamming Languages & Framework
               </h4>
               <ul class="space-y-6">
@@ -377,7 +380,7 @@
             </div>
 
             <div class="w-full lg:w-1/2 text-white dark:text-darkText ">
-              <h4 class="font-semibold dark:font-bold text-xl text-center sm:text-start mb-3">
+              <h4 data-aos="fade-left" class="font-semibold dark:font-bold text-xl text-center sm:text-start mb-3">
                 Multimedia Tools
               </h4>
               <ul class="space-y-6">
@@ -460,7 +463,7 @@
     <section id="address" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-700">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-full mx-auto text-center mb-16">
+                <div data-aos="fade-down" class="max-w-full mx-auto text-center mb-16">
                     <h4 class="font-semibold text-xl text-primary mb-2">Where I'm From</h4>
                     <h2 class="font-bold text-darkText dark:text-white text-3xl mb-4">
                     Sangihe Islands, North Sulawesi, Indonesia
@@ -469,15 +472,16 @@
                         The Sangihe Islands Regency is a regency located in North Sulawesi Province, Indonesia. Its territory consists of several islands, with Sangihe being the largest island and serving as the administrative center of the regency. The regency is known for its beautiful natural scenery and the potential of agriculture and fisheries, which are the main sources of livelihood for its inhabitants.
                     </p>
                 </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3414056429956!2d125.4942186!3d3.6113349999999906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328b0a35963ea2ed%3A0xbd02e5296d8331a3!2sJl.%20Makaampo%20No.45%2C%20Soataloara%20I%2C%20Kec.%20Tahuna%2C%20Kabupaten%20Kepulauan%20Sangihe%2C%20Sulawesi%20Utara%2095813!5e1!3m2!1sid!2sid!4v1707386651178!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe data-aos="fade-down" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3414056429956!2d125.4942186!3d3.6113349999999906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328b0a35963ea2ed%3A0xbd02e5296d8331a3!2sJl.%20Makaampo%20No.45%2C%20Soataloara%20I%2C%20Kec.%20Tahuna%2C%20Kabupaten%20Kepulauan%20Sangihe%2C%20Sulawesi%20Utara%2095813!5e1!3m2!1sid!2sid!4v1707386651178!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </div>
     </section>
     <!-- Map Section End -->
 
     <!-- Contact Section Start -->
     <section id="contact" class="pt-36 pb-32">
       <div class="container">
-        <div class="w-full px-4">
+        <div data-aos="fade-down" class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-xl text-primary mb-2">Conctact</h4>
             <h2 class="font-bold text-darkText dark:text-white text-3xl mb-4">
@@ -489,11 +493,8 @@
           </div>
         </div>
   
-        <form action="" name="contact-me">
-                
-          
-          <div class="w-full lg:w-2/3 mx-auto">
-
+        <form action="" name="contact-me">         
+          <div data-aos="fade-down" class="w-full lg:w-2/3 mx-auto">
             <!-- pesan sukses -->
             <div id="message" class="message hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
               <strong class="font-bold">Success!</strong>
@@ -630,9 +631,11 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- Button Back top-->
-    <a id="up" href="#hero" class="h-12 w-12 bg-slate-300/70 hover:bg-slate-300 hover:animate-pulse backdrop-blur-xl bottom-5 right-5 fixed z-[9999] rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-up scale-125 text-white"></i></a>
-    <!-- Button Back top-->
+    <!-- Button Back top/bottom-->
+    <a id="up" href="#hero" class="h-12 w-12 bg-slate-500/70 hover:bg-slate-300 hover:animate-pulse backdrop-blur-xl bottom-5 right-5 fixed z-[9999] rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-up scale-125 text-white"></i></a>
+
+    <a id="bot" href="#contact" class="h-12 w-12 bg-slate-500/70 hover:bg-slate-300 hover:animate-pulse backdrop-blur-xl bottom-5 right-5 fixed z-[9999] rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-down scale-125 text-white"></i></a>
+    <!-- Button Back top/bottom-->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -646,7 +649,11 @@
     });
     </script>
     
-
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- js for interakctive -->
     <script src="js/script.js"></script>

@@ -990,6 +990,34 @@ video {
   animation: leftRight 1s ease;
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 500ms ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 500ms ease forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1150,12 +1178,12 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.bg-slate-300\/70 {
-  background-color: rgb(203 213 225 / 0.7);
-}
-
 .bg-slate-400\/40 {
   background-color: rgb(148 163 184 / 0.4);
+}
+
+.bg-slate-500\/70 {
+  background-color: rgb(100 116 139 / 0.7);
 }
 
 .bg-slate-800 {

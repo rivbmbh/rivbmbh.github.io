@@ -29,11 +29,21 @@ module.exports = {
         leftRight: {
           '0%' : {width:'0%'},
           '100%' : {width:'max-content'},
+        },
+        fadeIn: {
+          '0%' : {opacity:'0'},
+          '100%' : {opacity:'1'},
+        },
+        fadeOut: {
+          '0%' : {opacity:'1'},
+          '100%' : {opacity:'0'},
         }
       },
       animation:{
         wiggle: 'wiggle 1s ease-in-out infinite',
         leftRight: 'leftRight 1s ease',
+        fadeIn: 'fadeIn 500ms ease forwards',
+        fadeOut: 'fadeOut 500ms ease forwards'
       }
     },
   },
