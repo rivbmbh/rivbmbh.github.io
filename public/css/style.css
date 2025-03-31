@@ -888,14 +888,6 @@ video {
   width: 10px;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
 .w-\[55\%\] {
   width: 55%;
 }
@@ -975,19 +967,18 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes leftRight {
+@keyframes fadeIn {
   0% {
-    width: 0%;
+    opacity: 0;
   }
 
   100% {
-    width: -moz-max-content;
-    width: max-content;
+    opacity: 1;
   }
 }
 
-.animate-leftRight {
-  animation: leftRight 1s ease;
+.animate-fadeIn {
+  animation: fadeIn 500ms ease forwards;
 }
 
 @keyframes fadeOut {
@@ -1004,18 +995,19 @@ video {
   animation: fadeOut 500ms ease forwards;
 }
 
-@keyframes fadeIn {
+@keyframes leftRight {
   0% {
-    opacity: 0;
+    width: 0%;
   }
 
   100% {
-    opacity: 1;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
-.animate-fadeIn {
-  animation: fadeIn 500ms ease forwards;
+.animate-leftRight {
+  animation: leftRight 1s ease;
 }
 
 .cursor-pointer {
