@@ -86,8 +86,16 @@ window.onscroll = function () {
     window.innerHeight + window.scrollY >= document.body.offsetHeight;
 
   if (isBottom) {
-    arrowScroll.classList.remove("fa-arrow-down");
-    scrollHead.classList.add("fa-arrow-up");
+    setTimeout(function () {
+      console.log("Menghapus fa-arrow-down dari arrowScroll");
+      arrowScroll.classList.remove("fa-arrow-down");
+    }, 2000);
+
+    setTimeout(function () {
+      console.log("Menambahkan fa-arrow-up ke scrollHead");
+      scrollHead.classList.add("fa-arrow-up");
+    }, 2000);
+
     scrollHead.href = "#hero";
     // scrollHead.addEventListener("scroll", function () {
     //   scrollHead.classList.add("animate-fadeIn");
